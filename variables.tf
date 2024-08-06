@@ -47,6 +47,13 @@ variable "private_data_subnet_az1_cidr" {
 }
 
 variable "private_data_subnet_az2_cidr" {
-  description = "private data subnet az2 cidr block"
-  type = string
+  description   = "private data subnet az2 cidr block"
+  type          = string
+}
+
+# security groups variables
+variable "ssh_location" {
+  default       = "176.36.83.49/32"
+  description   = "ip address that can ssh into the servers"
+  type          = string
 }
