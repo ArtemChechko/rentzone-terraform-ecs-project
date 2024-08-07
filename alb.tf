@@ -51,7 +51,7 @@ resource "aws_lb_listener" "alb_http_listener" {
 
 # create a listener on port 443 with forward action
 resource "aws_lb_listener" "alb_https_listener" {
-  load_balancer_arn  = aws_lb_listener.alb_http_listener.arn
+  load_balancer_arn  = aws_lb.application_load_balancer.arn
   port               = 443
   protocol           = "HTTPS"
   ssl_policy         = "ELBSecurityPolicy-2016-08"
