@@ -152,4 +152,3 @@ terraform destroy
 
 ---
 
-Feel free to customize the README further based on your specific project needs!
